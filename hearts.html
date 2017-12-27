@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Clickable Hearts Game</title>
+<script src="jquery-3.2.1.js"></script>
+<script src="Card.js"></script>
+<script src="Hearts.js"></script>
+<script src="HeartsMatch.js"></script>
+<script src="DumbAI.js"></script>
+<script src="clickplayer.js"></script>
+<link rel="stylesheet" type="text/css" href="testbed.css">
+
+
+
+</head>
+
+<body>
+<h1>Game of Hearts by Vatsal Parikh</h1>
+
+<div class="console"><p id="ongoing">To begin, please enter your name and then click the adjacent button.</p>
+<box id='boxy'></box>
+</div>
+
+<!-- <a id="passbutton" style="text-align: center;">Click to Pass Cards</a> -->
+
+<div class ="player" id="northuser">
+<h2 id="username"><form id ="nameentryform"><input type="text" placeholder="Enter User's Name Here" name="firstname" id="inputname"><a id="submitbutton"> Click here to begin game</a></form></h2>
+
+<div class="turn" id ="northturn"><h3>Your Turn</h3></div>
+
+
+<table>
+		<tr class ="usercards">	
+		</tr>
+</table>
+
+<h2 id="userscore">Score: 0</h2>
+	
+
+
+
+</div>
+
+
+
+<div class ="player" id="board">
+	<!-- <h2>Center</h2> -->
+
+		<table>
+		<tr class="centerBoard">
+		</tr>
+		<tr class="identifiers"></tr>
+</table>
+
+
+</div>
+
+
+<div class ="player" id="westai">
+	<h2>David</h2>
+
+	<div class="turn" id ="Davidturn"><h3>David's Turn</h3></div>
+
+	<table>
+		<tr class="aiDavid">
+		</tr>
+</table>
+
+<h2 id="Davidscore">Score: 0</h2>
+
+</div>
+
+
+
+
+
+
+<div class ="player" id="eastai">
+
+	<h2>Bob</h2>
+
+	<div class="turn" id ="Bobturn"><h3>Bob's Turn</h3></div>
+
+
+	<table>
+		<tr class="aiBob"></tr>
+</table>
+
+<h2 id="Bobscore">Score: 0</h2>
+
+
+</div>
+</br>
+
+
+<div class ="player" id="southai">
+
+	<h2>Carol</h2>
+
+	<div class="turn" id ="Carolturn"><h3>Carol's Turn</h3></div>
+
+
+	<table>
+		<tr class="aiCarol">
+		</tr>
+</table>
+
+<h2 id="Carolscore">Score: 0</h2>
+
+</div>
+
+
+</body>
+</html>
